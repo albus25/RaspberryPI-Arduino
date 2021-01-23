@@ -10,10 +10,10 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.connect("broker.hivemq.com",1883,60)
 
-str = "Narrow hai tera";
+str = "Temp";
 
 for i in range(7):
-    client.publish(topic="badsuratSaurabh",payload=str+" "+f"{i}",qos=0,retain=False)
+    client.publish(topic="bad",payload=str+" "+f"{i}",qos=0,retain=False)
     print(f"Hua {i}")
     time.sleep(3)
 client.loop_forever()
