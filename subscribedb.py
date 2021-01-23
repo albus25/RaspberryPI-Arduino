@@ -26,5 +26,5 @@ for row in rows:
 client = mqtt.Client()
 client.on_message = on_message
 client.connect("broker.hivemq.com",1883)
-client.subscribe("badsuratSaurabh",qos=0)
+client.subscribe("bad",qos=0)
 client.loop_forever()
